@@ -1,0 +1,30 @@
+
+body
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color: PapayaWhip;
+}
+
+textarea.maint
+{
+	width: 85%;
+}
+
+table.maint
+{
+	border: none;
+	border-spacing : 2px;
+	border-collapse: separate;
+}
+
+th.maint
+{
+	color: #ffffff;
+	background-color: #666666;
+}
+
+td.buttons
+{
+	background-color: #9c9c9c;
+	padding: 4px;
+}

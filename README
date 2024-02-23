@@ -1,0 +1,37 @@
+Various utility programs to work with mysql databases.
+--------------------------------------------------------------------------------
+Program : dbyfix
+Synopsis: Remove leading and trailing spaces, as well as single quotes, from given string field.
+
+USAGE: dbyfix db table keyfield fixfield
+
+--------------------------------------------------------------------------------
+Program : dbylicense
+Synopsis: Create license keys for mysql databases.  Also check a key for validity.
+
+USAGE: dbylicense -create database expires [appstring]
+   expires - mm/dd/yyyy or never
+USAGE: dbylicense -check  licensekey
+
+--------------------------------------------------------------------------------
+Program : dbyload
+Synopsis: Insert or Update mysql table from delimited file.  Modeled after Unify DBLOAD program:
+
+USAGE: dbyload {-n|-u} database table file specfile [options]
+options:
+-s separator
+-l nolog (not used)
+-b binary (not used)
+
+--------------------------------------------------------------------------------
+Program : dbymaint
+Synopsis: Query by forms for mysql/mariadb.  Use dbymkscr to make default screen forms.
+Creates .cgi program for installation in web directory
+
+--------------------------------------------------------------------------------
+Program : dbymkscr
+Synopsis: Make screens for dbymaint.cgi
+
+USAGE: dbymkscr db [table]
+
+

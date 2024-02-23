@@ -1,0 +1,27 @@
+
+
+
+CURDIR=`pwd`
+
+for DIR in `find .  -maxdepth 1 -type d`
+do
+	if [ -f "$DIR/NOMAKE" ]
+	then
+		echo "Saw NOMAKE in $DIR"
+		continue
+	fi
+
+	if [ ! -f "$DIR/makefile" ]
+	then
+		echo "No makefile in $DIR"
+		continue
+	fi
+
+	echo "=== Making $DIR ==="
+
+	cd $DIR
+	make $*
+	cd $CURDIR
+
+done | tee MAKERESULTS
+
