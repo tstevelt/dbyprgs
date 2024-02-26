@@ -34,4 +34,9 @@ Synopsis: Make screens for dbymaint.cgi
 
 USAGE: dbymkscr db [table]
 
+--------------------------------------------------------------------------------
+Program : dbymkfile
+Synopsis: Make file<dbname>.h
+
+USAGE: dbymkfile dumpfile [-dates {S|D}] [-fields]
 
