@@ -59,7 +59,7 @@ int main ( int argc, char *argv[] )
 	{
 		int		xi, xl;
 
-		seed_random_with_usec ();
+		shs_seed_random ();
 		for ( xi = 0; xi < 20; xi++ )
 		{
 			xl = random_range ( 65, 90 );

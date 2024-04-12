@@ -98,7 +98,7 @@ int main ( int argc, char *argv[] )
 			AppString = argv[4];
 		}
 
-		seed_random_with_usec ();
+		shs_seed_random ();
 
 
 		if ( AppString )
