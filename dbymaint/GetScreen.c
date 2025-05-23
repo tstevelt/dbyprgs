@@ -226,7 +226,8 @@ void GetScreen ( char *ScreenName )
 	if (( fp = fopen ( FileName, "r" )) == (FILE *)0 )
 	{
 		printf ( "Cannot open screen %s<br>\n", FileName );
-		return;
+		fprintf ( stderr, "Cannot open screen %s<br>\n", FileName );
+		exit ( 1 );
 	}
 	
 	if ( DebugGetScreen )
